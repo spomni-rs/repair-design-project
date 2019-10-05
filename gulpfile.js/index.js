@@ -5,5 +5,9 @@ const requireDir = require('require-dir');
 requireDir('./tasks')
 
 module.exports = {
-  default: series('clean', 'build-html')
+  default: series(
+    'clean', 
+    'copy-static',
+    'build-html',
+  )
 }

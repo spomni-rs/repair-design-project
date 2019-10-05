@@ -5,6 +5,7 @@
   "author": "spomni",
   "license": "UNLICENSED",
   "devDependencies": {
+    "del": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-cli": "^2.2.0",
     "require-dir": "^1.2.0"
