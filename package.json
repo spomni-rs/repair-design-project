@@ -3,5 +3,10 @@
   "version": "1.0.0",
   "main": "dist/index.html",
   "author": "spomni",
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.2.0",
+    "require-dir": "^1.2.0"
+  }
 }
