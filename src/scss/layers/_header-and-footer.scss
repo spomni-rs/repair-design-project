@@ -9,7 +9,7 @@
 
   padding: 23px 100px 23px 82px;
 
-  font-family: "FuturaDemiC", "Helvetica", sans-serif;
+  font-family: $font-futura-demi-c;
   font-size: 14px;
   line-height: 16px;
   text-transform: uppercase;
@@ -70,10 +70,20 @@
 
     margin: 0 0 0 45px;
 
+    font-family: $font-futura-demi-c;
+    text-transform: uppercase;
+
+    color: $color-text-on-dark;
     border: 0;
     border-radius: 2px;
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
     background-color: $color-stand-out-on-dark;
+
+    cursor: pointer;
+
+    &:active {
+      opacity: 0.7;
+    }
   }
 
   @media #{$phone-query} {
