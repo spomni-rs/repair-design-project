@@ -29,17 +29,7 @@ body {
 .main-container {
   max-width: 1440px;
   margin: 0 auto;
-}
-
-.banner {
-  height: 790 - 83px;
-
-  //draft
-  background-color: gray;
-
-  @media #{$phone-query} {
-    height: 476px;
-  }
+  background-color: $color-dark-bg;
 }
 
 .projects {
