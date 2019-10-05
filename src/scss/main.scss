@@ -1,6 +1,7 @@
-@import "./_variables.scss";
-
-$phone-query: "only screen and (max-width: 640px)";
+@import "base";
+@import "components";
+@import "layers";
+@import "utils";
 
 @mixin wrapper-absolute {
   position: absolute;
@@ -15,33 +16,19 @@ $phone-query: "only screen and (max-width: 640px)";
   height: auto;
 }
 
-body {
+body,
+body * {
   padding: 0;
   margin: 0;
-  font-size: 40px;
+}
 
+body {
   background-color: #252525;
-
-  color: blue;
 }
 
 .main-container {
-
   max-width: 1440px;
   margin: 0 auto;
-
-}
-
-.header {
-
-
-  //draft
-  height: 83px;
-  background-color: #131313;
-
-  @media #{$phone-query} {
-    height: 57px;
-  }
 }
 
 .banner {
