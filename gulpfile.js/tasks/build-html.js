@@ -1,16 +1,16 @@
 const gulp = require('gulp');
+const connect = require('gulp-connect');
+
 const projectPath = require('../lib/projectPath.js')
 
 const src = projectPath + '/src/*.html';
 const dest = projectPath + '/dist/';
 
-function buildHtml(done){
+gulp.task('build-html', (done) => {
 
   gulp.src(src)
-    .pipe(gulp.dest(dest));
-  
-  done()
-}
+  .pipe(gulp.dest(dest))
+  .pipe(connect.reload())
 
-gulp.task('build-html', buildHtml)
-module.exports = buildHtml
+  done()
+})

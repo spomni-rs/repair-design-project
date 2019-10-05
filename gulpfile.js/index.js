@@ -2,21 +2,23 @@ const gulp = require('gulp')
 const {series, parallel} = gulp;
 const requireDir = require('require-dir');
 
-const tasks = requireDir('./tasks')
+requireDir('./tasks')
 
-const build = series(
+gulp.task('build', series(
   'clean',
-  'copy-static',
+  'copy-assets',
   'build-html',
   'build-sass'
-);
+))
 
-const watch = () => {
+gulp.task('watch', (done) => {
   gulp.watch('src/**/*', series('build'))
-}
+})
 
-module.exports = {
-  default: series(build, watch),
-  build,
-  watch
-}
+gulp.task('default', parallel(
+  series(
+    'build',
+     'watch'
+  ),
+  'connect'
+))

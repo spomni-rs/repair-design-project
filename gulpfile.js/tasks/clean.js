@@ -5,12 +5,7 @@ const del = require('del')
 const src = projectPath + '/src/*.html';
 const dest = projectPath + '/dist/';
 
-function clean(done){
-
-  del.sync(`${projectPath}/dist/*`, {force: true})
-  
-  done()
-}
-
-gulp.task('clean', clean)
-module.exports = clean
+gulp.task('clean', (done) => {
+  del.sync('dist/**/*', {force: true});
+  done();
+})
