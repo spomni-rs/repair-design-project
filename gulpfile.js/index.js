@@ -6,8 +6,9 @@ requireDir('./tasks')
 
 module.exports = {
   default: series(
-    'clean', 
+    'clean',
     'copy-static',
     'build-html',
+    'build-sass'
   )
 }
