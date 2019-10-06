@@ -1,0 +1,40 @@
+
+.measurement {
+  height: 968px;
+  background-color: white;
+
+  display: grid;
+  grid-template-columns: 1fr 509px;
+  grid-column-gap: 54px;
+  grid-template-rows: 612px 1fr;
+  grid-row-gap: 38px;
+  grid-template-areas:
+    "img form"
+    "img ad";
+  padding-right: 99px;
+
+  &__img {
+    grid-area: img;
+    height: 692px;
+    background-color: gray;
+  }
+
+  &__form {
+    grid-area: form;
+    height: 509px;
+    align-self: flex-end;
+    background-color: black;
+  }
+
+  &__ad {
+    grid-area: ad;
+    width: 441px;
+    height: 72px;
+    margin: 0 auto;
+    background-color: orange;
+  }
+
+  @media #{$phone-query} {
+    display: none;
+  }
+}

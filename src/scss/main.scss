@@ -32,15 +32,6 @@ body {
   background-color: $color-dark-bg;
 }
 
-.work-flow {
-  height: 968px;
-  background-color: #aaaaaa;
-
-  @media #{$phone-query} {
-    display: none;
-  }
-}
-
 .wildest-fantasies {
 
   &__content {
