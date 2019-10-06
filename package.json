@@ -12,5 +12,9 @@
     "gulp-dart-sass": "^0.9.1",
     "gulp-sourcemaps": "^2.6.5",
     "require-dir": "^1.2.0"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "start": "gulp"
   }
 }
