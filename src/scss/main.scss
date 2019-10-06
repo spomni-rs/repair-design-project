@@ -32,15 +32,6 @@ body {
   background-color: $color-dark-bg;
 }
 
-.projects {
-  height: 1074px;
-  background-color: black;
-
-  @media #{$phone-query} {
-    height: 691px;
-  }
-}
-
 .online-control {
 
   &__wrapper {
