@@ -1,0 +1,54 @@
+.types-of-repair {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: pink;
+
+  padding: 779px 0 124px;
+
+  &__title {
+    background-color: green;
+
+    width: 257px;
+    height: 67px;
+    margin-bottom: 31px;;
+  }
+
+  &__items-container {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    max-width: 1236px;
+    margin: 0 -15px ;
+  }
+
+  &__item {
+    background-color: red;
+    background-clip: content-box;
+
+    width: 392px;
+    height: 608px;
+    padding: 0 15px;
+  }
+
+  @media #{$phone-query} {
+    padding: 83px 17px 266px;
+
+    &__title {
+      margin-bottom: 40px;
+    }
+
+    &__items-container {
+      flex-direction: column;
+      margin: -30px 0;
+    }
+
+    &__item {
+      width: auto;
+      height: 484px;
+      padding: 30px 0;
+    }
+  }
+}
