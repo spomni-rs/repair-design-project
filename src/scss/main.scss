@@ -32,17 +32,6 @@ body {
   background-color: $color-dark-bg;
 }
 
-
-
-.types-of-repair {
-  height: 1609px;
-  background-color: white;
-
-  @media #{$phone-query}{
-    height: 2030px;
-  }
-}
-
 .work-flow {
   height: 968px;
   background-color: #aaaaaa;
