@@ -1,0 +1,163 @@
+.online-control.popup-layer__content {
+  position: relative;
+  top: -294px;
+
+  background-color: transparent;
+  max-width: 817px;
+
+  .title {
+    background-color: green;
+    width: 196px;
+    height: 67px;
+    margin: 0 auto 32px;
+  }
+
+  .line {
+    width: 55px;
+    border: 1px solid $color-stand-out-on-dark;
+    margin: 0 auto;
+
+    &_desktop {
+      border-width: 2px;
+    }
+
+    &_mobile {
+      display: none;
+    }
+
+    @media #{$phone-query} {
+      &_desktop {
+        display: none;
+      }
+
+      &_mobile {
+        display: block;
+      }
+    }
+  }
+
+  .video {
+    background-color: blue;
+    max-width: 817px;
+    height: 434px;
+    margin: 0 auto 98px;
+  }
+
+  .text {
+    background-color: purple;
+    width: 681px;
+    height: 130px;
+    margin: 0 auto 92px;
+  }
+
+  .request-call {
+
+    display: grid;
+    grid-template-columns: 231px 231px 200px;
+    grid-template-rows: 69px 16px auto;
+    grid-template-areas:
+      "name phone submit"
+      "line line line"
+      "agreement agreement agreement";
+    justify-content: space-between;
+
+    margin: 0 auto;
+
+    & > * {
+      display: inline-block;
+    }
+
+    &__phone {
+      grid-area: phone;
+
+      background-color: red;
+      width: 231px;
+      height: 51px;
+    }
+    &__name {
+      grid-area: name;
+
+      background-color: red;
+      width: 231px;
+      height: 51px;
+    }
+    &__submit {
+      grid-area: submit;
+      background-color: orange;
+      width: 200px;
+      height: 51px;
+    }
+
+    &__line {
+      grid-area: line;
+      margin: 0 auto;
+    }
+    &__agreement {
+      grid-area: agreement;
+      background-color: black;
+      width: 286px;
+      height: 18px;
+      margin: 0 auto;
+    }
+
+    @media #{$phone-query} {
+      grid-template-columns: 1fr;
+      grid-template-rows: 108px 73px 55px 51px;
+      grid-template-areas:
+        "name"
+        "phone"
+        "agreement"
+        "submit";
+
+      &__line {
+        display: none;
+      }
+
+      &__phone {
+        width: 100%;
+      }
+
+      &__name {
+        width: 100%;
+      }
+
+      &__submit{
+        position: relative;
+        top: 21.5px;
+        width: 100%;
+      }
+
+      &__agreement {
+        width: 100%;
+      }
+    }
+  }
+
+  @media #{$phone-query}{
+    position: static;
+    padding: 0 17px;
+
+    .title {
+      margin-bottom: 40px;
+    }
+
+    .video {
+      margin-bottom: 28px;
+      height: 207px;
+    }
+
+    .line_desktop {
+      display: none;
+    }
+
+    .line_mobile {
+      display: block;
+      margin-bottom: 22px;
+    }
+
+    .text {
+      width: auto;
+      margin-bottom: 61px;
+    }
+  }
+}

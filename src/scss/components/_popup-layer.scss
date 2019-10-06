@@ -1,0 +1,17 @@
+.popup-layer {
+
+  &_popup_desktop {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+
+    .popup-layer__content {
+      position: relative;
+      margin: 0 auto;
+    }
+
+    @media #{$phone-query}{
+      position: static;
+    }
+  }
+}
