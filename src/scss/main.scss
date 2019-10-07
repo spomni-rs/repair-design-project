@@ -32,31 +32,6 @@ body {
   background-color: $color-dark-bg;
 }
 
-.wildest-fantasies {
-
-  &__content {
-    height: 864px;
-    background-color: yellow;
-  }
-
-  @media #{$phone-query} {
-
-    &__wrapper {
-      position: absolute;
-      left: 0;
-      width: 100%;
-    }
-
-    &__content {
-      position: relative;
-      top: -211px;
-      width: 340px;
-      height: 322px;
-      margin: 0 auto;
-    }
-  }
-}
-
 .design-project {
   background-color: gray;
   height: 620px;
