@@ -13,6 +13,27 @@
   }
 }
 
+// /mocks
+
+.styles-outer {
+
+  @media #{$tablet-query} {
+  
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    
+    display: flex;
+    
+    .styles {
+      position: relative;
+      top: -45px;
+      width: 100%;
+      align-self: center;
+    }
+  }
+}
+
 .styles {
 
   height: 800px;
@@ -113,7 +134,7 @@
     }
   }
   
-  @media only screen and (min-width: 1001px) and (max-width: 1200px) {
+  @media #{$tablet-ls-query} {
     grid-template-columns: 250px 670px;
     
     .gallery {
@@ -127,7 +148,7 @@
     }
   }
   
-  @media only screen and (max-width: 1000px){
+  @media #{$tablet-query} {
   
     height: auto;
     padding: 0 calc(2 * 100% / 125 + 11px);
@@ -166,24 +187,6 @@
           height: 100%;
         }
       }
-    }
-  }
-}
-
-@media only screen and (max-width: 1000px){
-
-  .styles-outer {
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    
-    display: flex;
-    
-    .styles {
-      position: relative;
-      top: -45px;
-      width: 100%;
-      align-self: center;
     }
   }
 }
