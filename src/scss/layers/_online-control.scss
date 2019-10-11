@@ -1,6 +1,7 @@
-.online-control.popup-layer__content {
+.online-control {
   position: relative;
   top: -294px;
+  margin: 0 auto;
 
   background-color: transparent;
   max-width: 817px;
@@ -159,5 +160,14 @@
       width: auto;
       margin-bottom: 61px;
     }
+  }
+}
+
+.online-control__wrapper {
+
+  @include popup-layer_popped-up_true();
+
+  @media #{$phone-query} {
+    @include popup-layer_popped-up_false();
   }
 }
