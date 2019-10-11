@@ -1,4 +1,7 @@
-$phone-query: "only screen and (max-width: 640px)";
+$phone-query: "only screen and (max-width: 600px)";
+$phone-ls-query: "only screen and (max-width: 800px)";
+$tablet-query: "only screen and (max-width: 1000px)";
+$tablet-ls-query: "only screen and (max-width: 1200px)";
 
 $color-dark-bg: #131313;
 $color-stand-out-on-dark: #E3B873;
