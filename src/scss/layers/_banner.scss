@@ -147,44 +147,56 @@
       opacity: 0.7;
     }
   }
-
-  @media #{$phone-query} {
+  
+  @media #{$tablet-query} {
+    margin-left: calc(31 / 100 * 100% - 228px); // 82px when 1000px; 20px when 800px
+  
+    .instagram-link {
+      display: none;
+    }
+  
+    .scroll-down-btn {
+      left: calc(-31 / 100 * 100% + 228px); // 82px when 1000px; 20px when 800px
+    }
+  }
+  
+  @media #{$phone-ls-query} {
     justify-content: space-between;
     height: auto;
     padding: 85px 18px 61px;
     margin: 0;
-
+  
     background-position: center;
     background-size: cover;
-
+  
     .title {
       width: auto;
       margin-bottom: 16px;
       font-size: 23px;
       line-height: 30px;
     }
-
+  
     pre.text {
       display: none;
     }
-
+  
     p.text {
       display: block;
       width: auto;
       margin-bottom: 32px;
     }
-
+  
     .buttons-panel {
       flex-direction: column;
       justify-content: space-between;
       width: auto;
       height: 128px;
-
+  
       &__button {
         width: auto;
       }
     }
-
+  
     .scroll-down-btn,
     .instagram-link {
       display: none;
