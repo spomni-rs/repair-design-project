@@ -1,3 +1,10 @@
+.online-control-outer {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 0px;
+}
+
 .online-control {
   position: relative;
   top: -294px;
@@ -6,12 +13,30 @@
   background-color: transparent;
   max-width: 817px;
 
-  .title {
+  &__title {
     background-color: green;
     width: 196px;
     height: 67px;
     margin: 0 auto 32px;
   }
+
+  &__line.line {}
+
+  &__video {
+    background-color: blue;
+    max-width: 817px;
+    height: 434px;
+    margin: 0 auto 98px;
+  }
+
+  &__text {
+    background-color: purple;
+    width: 681px;
+    height: 130px;
+    margin: 0 auto 92px;
+  }
+
+  &__request-call.request-call {}
 
   .line {
     width: 55px;
@@ -35,20 +60,6 @@
         display: block;
       }
     }
-  }
-
-  .video {
-    background-color: blue;
-    max-width: 817px;
-    height: 434px;
-    margin: 0 auto 98px;
-  }
-
-  .text {
-    background-color: purple;
-    width: 681px;
-    height: 130px;
-    margin: 0 auto 92px;
   }
 
   .request-call {
@@ -100,8 +111,47 @@
       height: 18px;
       margin: 0 auto;
     }
+  }
+}
 
-    @media #{$phone-query} {
+@media #{$phone-query} {
+
+  .online-control-outer {
+    position: initial;
+    width: initial;
+    height: initial;
+  }
+
+  .online-control {
+
+    position: static;
+    padding: 0 17px;
+
+    &__title {
+      margin-bottom: 40px;
+    }
+
+    &__video {
+      margin-bottom: 28px;
+      height: 207px;
+    }
+
+    &__text {
+      width: auto;
+      margin-bottom: 61px;
+    }
+
+    .line_desktop {
+      display: none;
+    }
+
+    .line_mobile {
+      display: block;
+      margin-bottom: 22px;
+    }
+
+    .request-call {
+
       grid-template-columns: 1fr;
       grid-template-rows: 108px 73px 55px 51px;
       grid-template-areas:
@@ -132,42 +182,5 @@
         width: 100%;
       }
     }
-  }
-
-  @media #{$phone-query}{
-    position: static;
-    padding: 0 17px;
-
-    .title {
-      margin-bottom: 40px;
-    }
-
-    .video {
-      margin-bottom: 28px;
-      height: 207px;
-    }
-
-    .line_desktop {
-      display: none;
-    }
-
-    .line_mobile {
-      display: block;
-      margin-bottom: 22px;
-    }
-
-    .text {
-      width: auto;
-      margin-bottom: 61px;
-    }
-  }
-}
-
-.online-control__wrapper {
-
-  @include popup-layer_popped-up_true();
-
-  @media #{$phone-query} {
-    @include popup-layer_popped-up_false();
   }
 }
