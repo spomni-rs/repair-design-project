@@ -28,7 +28,7 @@
 
     width: 100%;
     max-width: 1236px;
-    margin: 0 -15px 27;
+    margin: 0 -15px 27px;
   }
 
   &__item {
@@ -103,7 +103,20 @@
     }
   }
 
-  @media #{$phone-query} {
+  @media #{$tablet-query} {
+
+    .card {
+      padding:
+        25px
+        calc(0.498 * 100% - 107px)
+        59px
+      ;
+    }
+  }
+
+
+  @media #{$phone-ls-query} {
+
     padding: 83px 17px 266px;
 
     &__title {
@@ -112,13 +125,46 @@
 
     &__items-container {
       flex-direction: column;
-      margin: -30px 0;
     }
 
     &__item {
       width: auto;
-      height: 484px;
       padding: 30px 0;
+      margin-bottom: 177px;
+    }
+
+    .card {
+      padding: 25px 12% 59px;
+    }
+  }
+
+  @media #{$phone-query} {
+
+    .card {
+      top: 173px;
+
+      padding: 25px 12% 37px;
+      margin-left: 0;
+
+      &__title {
+        font-size: 15px;
+        line-height: 21px;
+      }
+
+      &__features {
+        font-size: 13px;
+        line-height: 22px;
+      }
+
+      &__price {
+        bottom: -20px;
+
+        width: 190px;
+        height: 40px;
+
+        font-size: 15px;
+        line-height: 21px;
+      }
     }
   }
 }
