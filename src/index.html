@@ -147,23 +147,62 @@ cost of materials due to the organization of work</pre>
     <section class="online-control-outer">
       <div class="online-control">
 
-        <div class="online-control__title"></div>
-
-        <div class="online-control__video"></div>
-
-        <div class="online-control__line line line_mobile"></div>
-
-        <div class="online-control__text"></div>
-
-        <div class="online-control__request-call request-call">
-          <div class="request-call__phone field"></div>
-          <div class="request-call__name field"></div>
-          <div class="request-call__submit"></div>
-          <div class="request-call__line">
-            <div class="line line_desktop"></div>
+        <div class="online-control__title">
+          <div class="layer-header">
+            <h2 class="layer-header__text layer-header__text_on-dark">online control</h2>
+            <div class="layer-header__icon">
+              <div class="layer-icon">
+                <div class="layer-icon__line line"></div>
+                <div class="layer-icon__icon"></div>
+                <div class="layer-icon__line line"></div>
+              </div>
+            </div>
           </div>
-          <div class="request-call__agreement"></div>
         </div>
+
+        <div class="online-control__video">
+          <iframe width="817" height="459" src="https://www.youtube.com/embed/zx9p-m7Oqag" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="online-control__line">
+          <div class="line line_desktop"></div>
+        </div>
+
+        <div class="online-control__text">
+            At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities!
+            Leave a request below and you will receive a link to the broadcast.
+        </div>
+
+        <div class="online-control__request-call">
+          <form class="request-call">
+
+            <div class="request-call__name">
+              <div class="field">
+
+                <label class="field__name" for="request-call__name">Name</label><br>
+                <input class="field__value" type="text" name="name" id="request-call__name" placeholder="What is your name:">
+
+              </div>
+            </div>
+
+            <div class="request-call__phone">
+              <div class="field">
+
+                <label class="field__name" for="request-call__phone">Phone</label><br>
+                <input class="field__value" type="text" name="name" id="request-call__phone" placeholder="Your phone number:">
+              </div>
+            </div>
+
+            <button class="request-call__submit">submit</button>
+
+            <div class="request-call__agreement">
+              <input type="checkbox" name="agree" id="request-call__agree">
+              <label for="request-call__agree">
+                I agree to the processing of personal data
+              </label>
+            </div>
+          </form>
+        </label>
 
       </div>
     </section>
