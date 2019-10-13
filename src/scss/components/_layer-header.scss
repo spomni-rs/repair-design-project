@@ -1,0 +1,44 @@
+.layer-header {
+
+  margin: 0 auto;
+
+  &__text {
+    font-family: $font-yeseva-one;
+    font-size: 20px;
+    line-height: 28px;
+
+    font-style: normal;
+    font-weight: normal;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #181818;
+
+    &_on-dark {
+      color: #ffffff;
+    }
+  }
+
+  &__icon {
+
+    margin-top: 12px;
+    text-align: center;
+
+    .layer-icon {
+
+      display: inline-flex;
+      align-items: center;
+
+      &__line {}
+      &__icon {
+        margin: 0 8px;
+      }
+
+      .line {
+        width: 54px;
+        height: 0px;
+      }
+    }
+  }
+}
