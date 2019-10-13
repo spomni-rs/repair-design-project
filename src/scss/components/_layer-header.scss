@@ -30,7 +30,9 @@
       display: inline-flex;
       align-items: center;
 
-      &__line {}
+      &__line {
+        border: 1px solid $color-stand-out-on-dark;
+      }
       &__icon {
         margin: 0 8px;
       }
