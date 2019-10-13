@@ -3,16 +3,23 @@
   flex-direction: column;
   align-items: center;
 
-  background-color: pink;
-
   padding: 779px 0 124px;
 
-  &__title {
-    background-color: green;
+  background-color: white;
 
-    width: 257px;
-    height: 67px;
-    margin-bottom: 31px;;
+  &__title {
+    margin-bottom: 31px;
+
+    .layer-icon__icon {
+      width: 28px;
+      height: 28px;
+
+      background-image: url("../../assets/img/types-of-repair-icon.svg");
+    }
+
+    .layer-icon__line.line {
+      width: 32px;
+    }
   }
 
   &__items-container {
@@ -21,16 +28,79 @@
 
     width: 100%;
     max-width: 1236px;
-    margin: 0 -15px ;
+    margin: 0 -15px 27;
   }
 
   &__item {
-    background-color: red;
-    background-clip: content-box;
+    width: 32%;
+    margin-bottom: 187px;
 
-    width: 392px;
-    height: 608px;
-    padding: 0 15px;
+    background-position: center;
+    background-size: cover;
+
+    &:nth-child(1){
+      background-image: url("../assets/img/repair-types-card-bg-1.png");
+    }
+    &:nth-child(2){
+      background-image: url("../assets/img/repair-types-card-bg-2.png");
+    }
+    &:nth-child(3){
+      background-image: url("../assets/img/repair-types-card-bg-3.png");
+    }
+
+    .card {
+      position: relative;
+      top: 233px;
+
+      padding: 25px 12% 59px;
+      margin: 65px 32px;
+      background-color: white;
+
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+
+      &__title {
+        margin-bottom: 13px;
+
+        font-family: $font-yeseva-one;
+        font-size: 18px;
+        line-height: 25px;
+
+        color: #363636;
+      }
+
+      &__features {
+        margin: 0 0 0 15px;
+
+        font-family: $font-futura-book-c;
+        font-size: 15px;
+        line-height: 25px;
+
+        color: #959595;
+      }
+
+      &__price {
+        position: absolute;
+        left: 0px;
+        bottom: -26px;
+
+        width: 228px;
+        height: 54px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-family: $font-yeseva-one;
+        font-size: 18px;
+        line-height: 25px;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+
+        background-color: #E3B873;
+        box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+      }
+    }
   }
 
   @media #{$phone-query} {
