@@ -1,11 +1,11 @@
-.types-of-repair {
+.design-project {
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  padding: 779px 0 124px;
+  padding: 150px 0 124px;
 
-  background-color: white;
+  background-image: linear-gradient(#ffffff 57%, #131313 43%);
 
   &__title {
     margin-bottom: 31px;
@@ -14,12 +14,25 @@
       width: 28px;
       height: 28px;
 
-      background-image: url("../../assets/img/types-of-repair-icon.svg");
+      background-image: url("../../assets/img/design-project-icon.svg");
     }
 
     .layer-icon__line.line {
       width: 32px;
     }
+  }
+
+  &__text {
+
+    max-width: 660px;
+    margin-bottom: 40px;
+
+    font-family: $font-futura-book-c;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+
+    color: #363636;
   }
 
   &__items-container {
@@ -33,6 +46,7 @@
 
   &__item {
     width: 32%;
+    height: 420px;
     margin-bottom: 187px;
 
     background-position: center;
@@ -42,10 +56,10 @@
       background-image: url("../assets/img/repair-types-card-bg-1.png");
     }
     &:nth-child(2){
-      background-image: url("../assets/img/repair-types-card-bg-2.png");
+      background-image: url("../assets/img/repair-types-card-bg-3.png");
     }
     &:nth-child(3){
-      background-image: url("../assets/img/repair-types-card-bg-3.png");
+      background-image: url("../assets/img/repair-types-card-bg-2.png");
     }
 
     .card {
@@ -105,7 +119,25 @@
 
   @media #{$tablet-query} {
 
-    padding-bottom: 470px;
+    margin-top: 0;
+
+    background-color: #131313;
+    background-image: none;
+
+    .layer-header__text {
+      font-size: 22px;
+      line-height: 30px;
+      color: white;
+    }
+
+    &__text {
+      font-size: 15px;
+      line-height: 20px;
+      font-style: normal;
+      font-weight: normal;
+
+      color: #FFFFFF;
+    }
 
     .card {
       padding:
@@ -119,7 +151,7 @@
 
   @media #{$phone-ls-query} {
 
-    padding: 83px 17px 350px;
+    padding: 350px 17px 350px;
 
     &__title {
       margin-bottom: 40px;
@@ -131,8 +163,21 @@
 
     &__item {
       width: auto;
-      padding: 30px 0;
-      margin-bottom: 177px;
+      height: 352px;
+      padding: 0;
+
+      &:nth-child(1) {
+        margin-bottom: 264px;
+      }
+
+      &:nth-child(2) {
+        margin-bottom: 343px;
+      }
+
+      &:nth-child(3) {
+        margin-bottom: 100px;
+      }
+
     }
 
     .card {
@@ -142,7 +187,25 @@
 
   @media #{$phone-query} {
 
-    padding-bottom: 150px;
+    padding-top: 150px;
+    padding-bottom: 320px;
+
+    &__item {
+      height: 352px;
+      padding-bottom: 0;
+
+      &:nth-child(1) {
+        margin-bottom: 164px;
+      }
+
+      &:nth-child(2) {
+        margin-bottom: 227px;
+      }
+
+      &:nth-child(3) {
+        margin-bottom: 0;
+      }
+    }
 
     .card {
       top: 173px;

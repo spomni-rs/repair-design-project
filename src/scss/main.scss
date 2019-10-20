@@ -26,15 +26,6 @@ body {
   background-color: $color-dark-bg;
 }
 
-.design-project {
-  background-color: gray;
-  height: 620px;
-
-  @media #{$phone-query} {
-    height: 1963px;
-  }
-}
-
 .our-work-flow {
   background-color: black;
   height: 1616px;
