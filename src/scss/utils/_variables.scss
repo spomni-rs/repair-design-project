@@ -1,4 +1,7 @@
-$phone-query: "only screen and (max-width: 640px)";
+$phone-query: "only screen and (max-width: 600px)";
+$phone-ls-query: "only screen and (max-width: 800px)";
+$tablet-query: "only screen and (max-width: 1000px)";
+$tablet-ls-query: "only screen and (max-width: 1200px)";
 
 $color-dark-bg: #131313;
 $color-stand-out-on-dark: #E3B873;
@@ -6,4 +9,5 @@ $color-text-on-dark: #ffffff;
 
 $font-futura-demi-c: "FuturaDemiC", "Helvetica", sans-serif;
 $font-futura-book-c: "FuturaBookC", "Helvetica", sans-serif;
+$font-proxima-nova: "Proxima Nova", "Helvetica", sans-serif;
 $font-yeseva-one: "Yeseva One", "Arial", serif;

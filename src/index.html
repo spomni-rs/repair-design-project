@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./css/main.css">
   <title>IC "Repair Design Project"</title>
@@ -124,47 +126,352 @@ cost of materials due to the organization of work</pre>
 
     </section>
 
-    <section class="popup-layer_popup_desktop">
-      <div class="online-control popup-layer__content">
-        <div class="title"></div>
-        <div class="video"></div>
-        <div class="line line_mobile"></div>
-        <div class="text"></div>
-        <div class="request-call">
-          <div class="field request-call__phone"></div>
-          <div class="field request-call__name"></div>
-          <div class="request-call__submit"></div>
-          <div class="request-call__line">
-            <div class="line line_desktop"></div>
+    <section class="online-control-outer">
+      <div class="online-control">
+
+        <div class="online-control__title">
+          <div class="layer-header">
+            <h2 class="layer-header__text layer-header__text_on-dark">online control</h2>
+            <div class="layer-header__icon">
+              <div class="layer-icon">
+                <div class="layer-icon__line line"></div>
+                <div class="layer-icon__icon"></div>
+                <div class="layer-icon__line line"></div>
+              </div>
+            </div>
           </div>
-          <div class="request-call__agreement"></div>
         </div>
+
+        <div class="online-control__video">
+          <div class="proportional-box">
+            <div class="proportional-box__height"></div>
+
+            <div class="proportional-box__content">
+              <iframe src="https://www.youtube.com/embed/zx9p-m7Oqag" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="online-control__line">
+          <div class="line line_desktop"></div>
+        </div>
+
+        <div class="online-control__text">
+            At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities!
+            Leave a request below and you will receive a link to the broadcast.
+        </div>
+
+        <div class="online-control__request-call">
+          <form class="request-call">
+
+            <div class="request-call__name">
+              <div class="field">
+
+                <label class="field__name" for="request-call__name">Name</label><br>
+                <input class="field__value" type="text" name="name" id="request-call__name" placeholder="What is your name:">
+
+              </div>
+            </div>
+
+            <div class="request-call__phone">
+              <div class="field">
+
+                <label class="field__name" for="request-call__phone">Phone</label><br>
+                <input class="field__value" type="text" name="name" id="request-call__phone" placeholder="Your phone number:">
+              </div>
+            </div>
+
+            <button class="request-call__submit">submit</button>
+
+            <div class="request-call__agreement">
+              <input type="checkbox" name="agree" id="request-call__agree">
+              <label for="request-call__agree">
+                I agree to the processing of personal data
+              </label>
+            </div>
+          </form>
+        </label>
+
       </div>
     </section>
 
     <section class="types-of-repair">
-      <div class="types-of-repair__title"></div>
-      <div class="types-of-repair__items-container">
-        <div class="types-of-repair__item"></div>
-        <div class="types-of-repair__item"></div>
-        <div class="types-of-repair__item"></div>
+
+      <div class="types-of-repair__title">
+        <div class="layer-header">
+          <h2 class="layer-header__text layer-header__text">TYPES OF REPAIR</h2>
+          <div class="layer-header__icon">
+            <div class="layer-icon">
+              <div class="layer-icon__line line"></div>
+              <div class="layer-icon__icon"></div>
+              <div class="layer-icon__line line"></div>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <div class="types-of-repair__items-container">
+
+        <div class="types-of-repair__item">
+          <div class="card">
+
+            <h3 class="card__title">Redecorating</h3>
+
+            <ul class="card__features">
+              <li>Dismantling of old coatings</li>
+              <li>Wallpapering</li>
+              <li>Painting walls and ceilings</li>
+              <li>Laying flooring</li>
+              <li>Replacing plumbing</li>
+              <li>Replacing sockets and switches</li>
+              <li>Replacing doors</li>
+            </ul>
+
+            <div class="card__price">from 900 rub / m2</div>
+
+          </div>
+        </div>
+
+        <div class="types-of-repair__item">
+          <div class="card">
+
+            <h3 class="card__title">Overhaul</h3>
+
+            <ul class="card__features">
+              <li>Dismantling of old coatings</li>
+              <li>Wallpapering</li>
+              <li>Painting walls and ceilings</li>
+              <li>Laying flooring</li>
+              <li>Replacing plumbing</li>
+              <li>Replacing sockets and switches</li>
+              <li>Replacing doors</li>
+            </ul>
+
+            <div class="card__price">from 1800 rub / m2</div>
+
+          </div>
+        </div>
+
+        <div class="types-of-repair__item">
+          <div class="card">
+
+            <h3 class="card__title">Designer Repair</h3>
+
+            <ul class="card__features">
+              <li>Dismantling of old coatings</li>
+              <li>Wallpapering</li>
+              <li>Painting walls and ceilings</li>
+              <li>Laying flooring</li>
+              <li>Replacing plumbing</li>
+              <li>Replacing sockets and switches</li>
+              <li>Replacing doors</li>
+            </ul>
+
+            <div class="card__price">from 4000 rub / m2</div>
+
+            div.med
+
+          </div>
+        </div>
+
+      </div>
+
     </section>
 
     <section class="measurement">
-      <div class="measurement__img"></div>
-      <div class="measurement__form"></div>
-      <div class="measurement__ad"></div>
-    </section>
+      <div class="measurement__flow">
 
-    <section class="wildest-fantasies wildest-fantasies__wrapper">
-      <div class="wildest-fantasies__content">
-        wildest-fantasies
+      </div>
+      <div class="measurement__form">
+
+        <div class="form">
+
+          <div class="form__title">Leave a request for free departure of the measurer</div>
+
+          <div class="form__name">
+            <div class="field">
+              <label class="field__name" for="request-measurer__name">Name</label><br>
+              <input class="field__value" type="text" name="name" id="request-measurer__name" placeholder="What is your name:">
+            </div>
+          </div>
+
+          <div class="form__phone">
+            <div class="field">
+
+              <label class="field__name" for="request-measurer__phone">Phone</label><br>
+              <input class="field__value" type="text" name="name" id="request-measurer__phone" placeholder="Your phone number:">
+            </div>
+          </div>
+
+          <div class="form__email">
+            <div class="field">
+              <label class="field__name" for="request-measurer__email">Email</label><br>
+              <input class="field__value" type="text" name="name" id="request-measurer__email" placeholder="Your email">
+            </div>
+          </div>
+
+          <div class="form__agree">
+            <input type="checkbox" name="agree" id="request-measurer__agree">
+            <label for="request-measurer__agree">
+              I agree to the processing of personal data
+            </label>
+          </div>
+
+          <button class="form__submit">Call the measurer</button>
+        </div>
+
+      </div>
+      <div class="measurement__ad">
+        <div class="icon"></div>
+        <div class="text">Help save 10 - 20% of the
+            cost of materials</div>
       </div>
     </section>
 
+    <div class="styles-outer">
+      <section class="styles">
+
+        <div class="styles__title">We realize your wildest fantasies</div>
+
+        <div class="styles__sidebar">
+          <ul>
+            <li>American classic</li>
+            <li>Empire</li>
+            <li>Classical</li>
+            <li>Loft</li>
+            <li>Minimalism</li>
+            <li>Provence</li>
+            <li>Romantism</li>
+            <li>Scandinavian style</li>
+            <li>Mediterranean style</li>
+            <li>High tech</li>
+            <li>Eclectism</li>
+          </ul>
+        </div>
+
+        <div class="styles__gallery">
+          <div class="gallery">
+
+            <div class="gallery__item"><img src="./assets/img/project-slide-1.png"></div>
+            <div class="gallery__item"><img src="./assets/img/project-slide-2.png"></div>
+            <div class="gallery__item"><img src="./assets/img/project-slide-1.png"></div>
+            <div class="gallery__item"><img src="./assets/img/project-slide-2.png"></div>
+
+          </div>
+        </div>
+
+        <div class="styles__slider" >
+
+          <div class="proportional-box" >
+            <div class="proportional-box__height"></div>
+            <div class="proportional-box__content" >
+
+            <div class="slider" >
+
+              <div class="slider__item">
+                <img src="./assets/img/project-slide-1.png">
+              </div>
+
+              <div class="slider__item">
+                <img src="./assets/img/project-slide-1.png">
+              </div>
+
+            </div>
+
+            <div class="controls-wrapper">
+              <div class="prev-button"></div>
+              <div class="next-button"></div>
+            </div>
+          </div>
+          </div>
+        </div>
+
+      </section>
+    </div>
+
     <section class="design-project">
-      design-project
+
+      <div class="design-project__title">
+        <div class="layer-header">
+          <h2 class="layer-header__text layer-header__text">design project</h2>
+          <div class="layer-header__icon">
+            <div class="layer-icon">
+              <div class="layer-icon__line line"></div>
+              <div class="layer-icon__icon"></div>
+              <div class="layer-icon__line line"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="design-project__text">Design project not only helps to make the repair of your apartment more modern, but also significantly reduces the cost of materials and reduces the time of repair work.</div>
+
+      <div class="design-project__items-container">
+
+        <div class="design-project__item">
+          <div class="card">
+
+            <h3 class="card__title">Mini</h3>
+
+            <ul class="card__features">
+                <li>Measurement drawing</li>
+                <li>Redevelopment</li>
+                <li>Layout of furniture</li>
+                <li>Plumbing plan. equipment</li>
+            </ul>
+
+            <div class="card__price">150 rub / m2</div>
+
+          </div>
+        </div>
+
+        <div class="design-project__item">
+          <div class="card">
+
+            <h3 class="card__title">Standart</h3>
+
+            <ul class="card__features">
+              <li>Measurement drawing</li>
+              <li>Redevelopment</li>
+              <li>Layout of furniture</li>
+              <li>Plan of ceilings</li>
+              <li>Floor Plan</li>
+              <li>Electricians plan</li>
+              <li>Lighting plan</li>
+            </ul>
+
+            <div class="card__price">400 rub / m2</div>
+
+          </div>
+        </div>
+
+        <div class="design-project__item">
+          <div class="card">
+
+            <h3 class="card__title">Full</h3>
+
+            <ul class="card__features">
+              <li>Measurement drawing</li>
+              <li>Redevelopment</li>
+              <li>Layout of furniture</li>
+              <li>Plan of ceilings</li>
+              <li>Floor Plan</li>
+              <li>Electricians plan</li>
+              <li>Lighting plan</li>
+              <li>Wall reamers</li>
+              <li>3D visualization</li>
+              <li>Bill of materials</li>
+              <li>Departure for a selection of materials</li>
+              <li>Furniture selection</li>
+            </ul>
+
+            <div class="card__price">900 rub / m2</div>
+
+          </div>
+        </div>
+
+      </div>
+
     </section>
 
     <section class="our-work-flow">

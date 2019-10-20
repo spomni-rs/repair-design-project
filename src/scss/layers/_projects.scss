@@ -13,7 +13,6 @@
     "features slider"
     "pagination slider";
 
-
   &__indent {
     grid-area: indent;
   }
@@ -35,8 +34,12 @@
     justify-content: flex-start;
 
     &__item {
-      margin-right: 62px;
+      margin-right: 60px;
       padding-bottom: 6px;
+
+      &:nth-child(3) {
+        margin-right: 0;
+      }
 
       &_active,
       &:hover {
@@ -151,22 +154,6 @@
       border: 1px solid $color-stand-out-on-dark;
       content: ' ';
     }
-
-    @media #{$phone-query} {
-      display: flex;
-      justify-content: center;
-
-      .with-after {
-        align-items: flex-start;
-        font-size: 22px;
-        line-height: 138.6%;
-        text-align: center;
-      }
-
-      .with-after::after {
-        display: none;
-      }
-    }
   }
 
   &__text {
@@ -179,14 +166,6 @@
     line-height: 29px;
 
     color: $color-text-on-dark;
-
-    @media #{$phone-query} {
-      width: auto;
-      margin: 0 14px;
-      font-size: 14px;
-      line-height: 158.48%;
-      text-align: center;
-    }
   }
 
   &__features {
@@ -213,22 +192,6 @@
         line-height: 19px;
 
         color: $color-text-on-dark;
-      }
-    }
-
-    @media #{$phone-query} {
-      grid-template-columns: 47% 53%;
-      grid-template-rows: 95px 108px;
-
-      .field {
-        &__name {
-          font-size: 14px;
-          line-height: 138.6%;
-        }
-        &__value {
-          font-size: 14px;
-          line-height: 19px;
-        }
       }
     }
   }
@@ -284,7 +247,24 @@
     }
   }
 
-  @media #{$phone-query} {
+  @media #{$tablet-ls-query} {
+
+    grid-template-columns: 250px 1fr;
+
+    grid-template-areas:
+      "title navbar"
+      "text slider"
+      "text slider"
+      "features slider"
+      "pagination slider";
+
+
+    &__indent {
+      display: none;
+    }
+  }
+
+  @media #{$phone-ls-query} {
 
     padding: 36px 18px 0;
 
@@ -334,8 +314,58 @@
         &:not(:nth-child(2)) {
           display: none;
         }
-        // width: 100%;
+      }
+    }
+  }
 
+  &__title {
+
+    @media #{$phone-ls-query} {
+      display: flex;
+      justify-content: center;
+
+      .with-after {
+        align-items: flex-start;
+        font-size: 22px;
+        line-height: 138.6%;
+        text-align: center;
+      }
+
+      .with-after::after {
+        display: none;
+      }
+    }
+  }
+
+  &__text {
+
+    @media #{$phone-ls-query} {
+      width: auto;
+      margin: 0 14px;
+      text-align: center;
+    }
+
+    @media #{$phone-query} {
+      font-size: 14px;
+      line-height: 158.48%;
+    }
+  }
+
+  &__features {
+
+    @media #{$phone-ls-query} {
+      grid-template-columns: 47% 53%;
+      grid-template-rows: 95px 108px;
+
+      .field {
+        &__name {
+          font-size: 14px;
+          line-height: 138.6%;
+        }
+        &__value {
+          font-size: 14px;
+          line-height: 19px;
+        }
       }
     }
   }
