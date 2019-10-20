@@ -105,6 +105,8 @@
 
   @media #{$tablet-query} {
 
+    padding-bottom: 470px;
+
     .card {
       padding:
         25px
@@ -117,7 +119,7 @@
 
   @media #{$phone-ls-query} {
 
-    padding: 83px 17px 266px;
+    padding: 83px 17px 350px;
 
     &__title {
       margin-bottom: 40px;
@@ -139,6 +141,8 @@
   }
 
   @media #{$phone-query} {
+
+    padding-bottom: 230px;
 
     .card {
       top: 173px;
