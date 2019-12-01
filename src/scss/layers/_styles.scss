@@ -58,6 +58,17 @@
 
     li {
       margin-bottom: 25px;
+      cursor: pointer;
+
+      &:hover,
+      &.active {
+        color: $color-stand-out-on-dark;
+        text-decoration: underline;
+      }
+
+      &:active {
+        opacity: 0.7;
+      }
     }
   }
 
