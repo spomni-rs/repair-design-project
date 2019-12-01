@@ -26,19 +26,10 @@ body {
   background-color: $color-dark-bg;
 }
 
-.our-work-flow {
-  background-color: black;
-  height: 1616px;
-
-  @media #{$phone-query} {
-    display: none;
-  }
-}
-
 .our-team {
 
   &__wrapper {
-    position: absolute;
+    // position: absolute;
     left: 0;
 
     width: 100%;
@@ -46,7 +37,7 @@ body {
   }
 
   &__content {
-    position: relative;
+    // position: relative;
     top: -407px;
 
     max-width: 1064px;
