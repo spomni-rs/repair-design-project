@@ -26,15 +26,6 @@ body {
   background-color: $color-dark-bg;
 }
 
-.contacts {
-  height: 953px;
-  background-color: gray;
-
-  @media #{$phone-query} {
-    height: 514px;
-  }
-}
-
 .footer {
   background-color: black;
   height: 132px;
