@@ -1,0 +1,115 @@
+.form {
+
+  .form__title {
+    font-family: $font-futura-demi-c;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: bold;
+
+    text-align: center;
+
+    color: $color-light-text;
+  }
+
+  .form__agree {
+    font-family: $font-futura-book-c;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: white;
+
+    input[type=checkbox] {
+      position: absolute;
+      z-index: -1;
+
+      &:checked + *::before {
+        background-position: 18px;
+      }
+    }
+
+    label {
+      display: flex;
+      align-items: center;
+
+      cursor: pointer;
+
+      &::before {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        margin-right: 8px;
+
+        background-image: url("../assets/img/measurement-checkbox-icon.svg");
+        content: " ";
+      }
+
+      &:hover {
+        text-shadow: 0px 0px 2px #E3B873;
+
+        &::before {
+          box-shadow: inset 2px 2px 3px #E3B873,
+                      inset -2px -2px 3px #E3B873;
+        }
+      }
+    }
+  }
+
+  .form__submit {
+
+    width: 213px;
+    height: 51px;
+
+    margin: 40px 0 0 auto;
+
+    font-family: $font-futura-demi-c;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 28px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    background: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+    border-radius: 2px;
+
+    color: white;
+
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0px 10px 15px rgba(227, 184, 115, 0.15);
+    }
+
+    &:active {
+      box-shadow: 0px 1px 15px rgba(227, 184, 115, 0.15);
+    }
+  }
+
+  .field {
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+
+    &__name {
+
+      font-family: $font-futura-book-c;
+      font-size: 15px;
+      line-height: 20px;
+
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    &__value {
+      margin: 3px 0 3px;
+      font-family: $font-futura-book-c;
+      font-size: 18px;
+      line-height: 1.4;
+
+      color: $color-light-text;
+
+      &::placeholder {
+        color: $color-light-text;
+      }
+    }
+  }
+}
