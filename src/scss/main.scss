@@ -25,12 +25,3 @@ body {
   margin: 0 auto;
   background-color: $color-dark-bg;
 }
-
-.footer {
-  background-color: black;
-  height: 132px;
-
-  @media #{$phone-query} {
-    display: none;
-  }
-}
