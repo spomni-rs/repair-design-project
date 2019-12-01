@@ -26,15 +26,6 @@ body {
   background-color: $color-dark-bg;
 }
 
-.our-cliens {
-
-  height: 1523px;
-  background-color: white;
-
-  @media #{$phone-query} {
-    display: none;
-  }
-}
 
 .have-any-questions {
 

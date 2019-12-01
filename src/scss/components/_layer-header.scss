@@ -13,10 +13,10 @@
     text-align: center;
     text-transform: uppercase;
 
-    color: #181818;
+    color: $color-dark-text;
 
     &_on-dark {
-      color: #ffffff;
+      color: $color-light-text;
     }
   }
 

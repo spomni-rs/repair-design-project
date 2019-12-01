@@ -11,6 +11,10 @@
     margin-top: 75px;
   }
 
+  @media #{$phone-ls-query} {
+    padding: 0 16px;
+  }
+
   &__title {
 
     .layer-icon__icon {
@@ -81,7 +85,7 @@
     }
 
     @media #{$phone-query} {
-      padding: 0 16px;
+      padding: 0 0;
     }
   }
 
