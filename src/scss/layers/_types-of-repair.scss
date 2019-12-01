@@ -38,13 +38,15 @@
     background-position: center;
     background-size: cover;
 
-    &:nth-child(1){
+    &:nth-child(1) {
       background-image: url("../assets/img/repair-types-card-bg-1.png");
     }
-    &:nth-child(2){
+
+    &:nth-child(2) {
       background-image: url("../assets/img/repair-types-card-bg-2.png");
     }
-    &:nth-child(3){
+
+    &:nth-child(3) {
       background-image: url("../assets/img/repair-types-card-bg-3.png");
     }
 
@@ -80,7 +82,7 @@
 
       &__price {
         position: absolute;
-        left: 0px;
+        left: 0;
         bottom: -26px;
 
         width: 228px;
@@ -95,9 +97,9 @@
         line-height: 25px;
         text-transform: uppercase;
 
-        color: #FFFFFF;
+        color: #ffffff;
 
-        background-color: #E3B873;
+        background-color: #e3b873;
         box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
       }
     }
@@ -111,8 +113,7 @@
       padding:
         25px
         calc(0.498 * 100% - 107px)
-        59px
-      ;
+        59px;
     }
   }
 

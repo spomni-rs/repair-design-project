@@ -16,10 +16,10 @@
     }
   }
 
-  &__prev {}
   &__next {
     transform: rotate(180deg);
   }
+
   &__item-wrapper {
     display: flex;
     margin: 0 21px;

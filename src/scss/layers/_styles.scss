@@ -1,5 +1,4 @@
 .styles-outer {
-
   @media #{$tablet-query} {
 
     position: absolute;
@@ -47,7 +46,6 @@
   }
 
   &__sidebar {
-
     ul {
       list-style-type: none;
 
@@ -55,7 +53,7 @@
       font-size: 20px;
       line-height: 23px;
 
-      color: #FFFFFF;
+      color: #ffffff;
     }
 
     li {
@@ -87,7 +85,7 @@
         height: 36px;
 
         border-radius: 50%;
-        box-shadow: 0px 0px 15px rgba(227, 184, 115, 0.5);
+        box-shadow: 0 0 15px rgba(227, 184, 115, 0.5);
 
         background-color: $color-stand-out-on-dark;
         background-image: url("../assets/img/rihgt-arrow-icon.png");
@@ -126,11 +124,9 @@
     $half-gap: $gap / 2;
 
     @mixin item-ratio-hight($ratio) {
-      height: calc(
-        100% / 1.3 * 1.1
-        * #{$ratio}
-        - #{$half-gap}
-      );
+      height: calc(100% / 1.3 * 1.1
+      * #{$ratio}
+      - #{$half-gap});
     }
 
     width: 100%;
@@ -154,6 +150,7 @@
       &:nth-child(4) {
         @include item-ratio-hight(0.35);
       }
+
       &:nth-child(2),
       &:nth-child(3) {
         @include item-ratio-hight(0.65);
@@ -163,6 +160,7 @@
       &:nth-child(3) {
         padding-bottom: $half-gap;
       }
+
       &:nth-child(2),
       &:nth-child(4) {
         padding-top: $half-gap;
@@ -242,7 +240,6 @@
   }
 
   @media #{$phone-ls-query} {
-
     &__title {
       font-size: 22px;
       line-height: 30px;

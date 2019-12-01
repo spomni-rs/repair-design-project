@@ -1,22 +1,16 @@
 @mixin popup-layer_popped-up_false {
-
   &.popup-layer {
     position: initial;
     width: initial;
     height: initial;
-
-    &__content {}
   }
 }
 
 @mixin popup-layer_popped-up_true {
-
   &.popup-layer {
     position: absolute;
-    left: 0px;
+    left: 0;
     width: 100%;
-    height: 0px;
-
-    &__content {}
+    height: 0;
   }
 }

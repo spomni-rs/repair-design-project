@@ -33,13 +33,14 @@
       &__line {
         border: 1px solid $color-stand-out-on-dark;
       }
+
       &__icon {
         margin: 0 8px;
       }
 
       .line {
         width: 54px;
-        height: 0px;
+        height: 0;
       }
     }
   }

@@ -1,6 +1,6 @@
 .online-control-outer {
   position: absolute;
-  left: 0px;
+  left: 0;
   width: 100%;
   height: 0.1px;
 
@@ -18,16 +18,6 @@
 
   &__title {
     margin: 0 auto 32px;
-
-    .layer-header{
-      &__title {}
-      &__icon {
-        .layer-icon {
-          &__line.line {}
-          &__icon {}
-        }
-      }
-    }
 
     .layer-icon__icon {
       width: 34px;
@@ -52,8 +42,6 @@
 
   &__line {
     margin-bottom: 34px;
-
-    .line {}
   }
 
   &__text {
@@ -68,13 +56,9 @@
     color: #363636;
   }
 
-  &__request-call {
-    .request-call {}
-  }
-
   .line {
     width: 54px;
-    height: 0px;
+    height: 0;
     border: 1.5px solid $color-stand-out-on-dark;
     margin: 0 auto;
   }
@@ -97,12 +81,10 @@
 
     &__name {
       grid-area: name;
-      .field {}
     }
 
     &__phone {
       grid-area: phone;
-      .field {}
     }
 
     &__submit {
@@ -118,15 +100,15 @@
       text-align: center;
       text-transform: uppercase;
 
-      background: #E3B873;
-      box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+      background: #e3b873;
+      box-shadow: 0 15px 15px rgba(227, 184, 115, 0.15);
       border-radius: 2px;
 
       color: white;
 
       cursor: pointer;
 
-      &::active {
+      &:active {
         opacity: 0.5;
       }
     }
@@ -143,7 +125,7 @@
 
       color: #181818;
 
-      input[type=checkbox] {
+      input[type="checkbox"] {
         position: absolute;
         z-index: -1;
 
@@ -169,10 +151,10 @@
         }
 
         &:hover {
-          text-shadow: 0px 0px 2px #E3B873;
+          text-shadow: 0 0 2px #e3b873;
 
           &::before {
-            box-shadow: 0px 0px 5px #E3B873;
+            box-shadow: 0 0 5px #e3b873;
           }
         }
       }
@@ -180,7 +162,7 @@
   }
 
   .field {
-    border-bottom: 1px solid rgba(54, 54, 54, 0.3);;
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
 
     &__name {
 
@@ -190,9 +172,10 @@
 
       color: rgba(54, 54, 54, 0.5);
     }
+
     &__value {
       margin: 3px 0 3px;
-      font-family: FuturaBookC;
+      font-family: $font-futura-book-c;
       font-size: 18px;
       line-height: 24px;
 
@@ -202,7 +185,6 @@
 }
 
 @media #{$phone-ls-query} {
-
   .online-control-outer {
     position: initial;
     width: initial;
@@ -233,7 +215,7 @@
       font-size: 14px;
       line-height: 24px;
 
-      color: #FFFFFF;
+      color: #ffffff;
     }
 
     .request-call {
@@ -254,7 +236,7 @@
         width: 100%;
       }
 
-      &__submit{
+      &__submit {
         position: relative;
         top: 21.5px;
         width: 100%;
@@ -266,11 +248,10 @@
         font-size: 16px;
         line-height: 22px;
 
-        color: #FFFFFF;
+        color: #ffffff;
       }
 
       .field {
-
         &__name {
           font-size: 15px;
           line-height: 20px;
@@ -282,7 +263,7 @@
           font-size: 18px;
           line-height: 25px;
 
-          color: #FFFFFF;
+          color: #ffffff;
         }
       }
     }

@@ -12,11 +12,17 @@
     "gulp-dart-sass": "^0.9.1",
     "gulp-htmlhint": "^3.0.0",
     "gulp-sourcemaps": "^2.6.5",
+    "gulp-stylelint": "^10.0.0",
     "node-pretty-log": "^1.1.0",
-    "require-dir": "^1.2.0"
+    "require-dir": "^1.2.0",
+    "stylelint": "^12.0.0",
+    "stylelint-config-htmlacademy": "^0.1.4"
   },
   "scripts": {
     "build": "gulp build",
     "start": "gulp"
+  },
+  "stylelint": {
+    "extends": "stylelint-config-htmlacademy"
   }
 }
