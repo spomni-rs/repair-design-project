@@ -5,6 +5,16 @@
   git clone https://github.com/spomni-rs/repair-design-project.git
   ```
 
+- open the repository folder
+  ```
+  cd repair-design-project
+  ```
+
+- checkout to the branch "make-markup"
+  ```
+  git checkout make-markup
+  ```
+
 - install depedencies
   ```
   npm install
