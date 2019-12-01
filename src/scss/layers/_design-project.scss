@@ -120,6 +120,7 @@
   @media #{$tablet-query} {
 
     margin-top: 0;
+    padding-top: 40%;
 
     background-color: #131313;
     background-image: none;
@@ -151,7 +152,7 @@
 
   @media #{$phone-ls-query} {
 
-    padding: 350px 17px 350px;
+    padding: 40% 17px 350px;
 
     &__title {
       margin-bottom: 40px;
@@ -187,7 +188,6 @@
 
   @media #{$phone-query} {
 
-    padding-top: 150px;
     padding-bottom: 320px;
 
     &__item {
