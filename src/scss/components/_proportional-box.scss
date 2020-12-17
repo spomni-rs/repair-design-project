@@ -1,0 +1,21 @@
+.proportional-box {
+  position: relative;
+
+  &__height {
+    position: static;
+  }
+
+  &__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@mixin proportional-box__set-ratio($width, $height) {
+  &__height {
+    padding-top: calc(#{$height} / #{$width} * 100%);
+  }
+}

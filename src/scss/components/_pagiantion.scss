@@ -1,0 +1,47 @@
+.pagination {
+
+  display: flex;
+  align-items: flex-end;
+
+  &__prev,
+  &__next {
+    width: 44px;
+    height: 15px;
+    background-image: url("../assets/img/left-pagi-arrow-icon.svg");
+    background-repeat: no-repeat;
+    cursor: pointer;
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+
+  &__next {
+    transform: rotate(180deg);
+  }
+
+  &__item-wrapper {
+    display: flex;
+    margin: 0 21px;
+  }
+
+  &__item {
+    width: 10px;
+    height: 10px;
+    margin: 2.5px 9px;
+
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+
+    cursor: pointer;
+
+    &_active,
+    &:hover {
+      background-color: #ffffff;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.horizontal-menu {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & > * {
+    display: inline-block;
+  }
+
+  &__item {
+    cursor: pointer;
+
+    &_active,
+    &:hover {
+      font-weight: bold;
+    }
+
+    &:active {
+      font-weight: normal;
+      opacity: 0.7;
+    }
+  }
+}

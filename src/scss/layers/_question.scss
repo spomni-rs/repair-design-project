@@ -1,0 +1,101 @@
+.question {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+
+  @media #{$tablet-query} {
+    position: static;
+    transform: translateY(0);
+  }
+
+  &__inner {
+    max-width: 880px;
+    margin: 0 auto;
+    background-color: $color-dark-bg;
+
+    @media #{$tablet-query} {
+      max-width: 100%;
+    }
+  }
+
+  &__form {
+    max-width: 520px;
+    margin: 0 auto;
+    padding: 34px 0;
+  }
+
+  .form {
+    display: grid;
+    grid-template-areas:
+      "title title"
+      "name phone"
+      "question question"
+      "agree agree"
+      "submit submit";
+    column-gap: 60px;
+
+    .form__title {
+      grid-area: title;
+
+      font-family: $font-yeseva-one;
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+
+    .field,
+    .form__agree,
+    .form__submit {
+      margin-top: 45px;
+    }
+
+    .form__name {
+      grid-area: name;
+    }
+
+    .form__phone {
+      grid-area: phone;
+    }
+
+    .form__question {
+      grid-area: question;
+    }
+
+    .form__agree {
+      grid-area: agree;
+    }
+
+    .form__submit {
+      grid-area: submit;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media #{$phone-query} {
+      grid-template-areas:
+        "title"
+        "name"
+        "phone"
+        "question"
+        "agree"
+        "submit";
+      padding: 0 16px;
+
+      .form__title {
+        margin-top: 40px;
+      }
+
+      .field {
+        margin-top: 60px;
+      }
+
+      .form__agree {
+        margin-top: 22px;
+      }
+
+      .form__submit {
+        margin-top: 70px;
+      }
+    }
+  }
+}

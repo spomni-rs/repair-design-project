@@ -1,0 +1,209 @@
+.team {
+  margin-top: 90px;
+  background-image: linear-gradient($color-dark-bg 50%, $color-text-on-dark 50%);
+
+  @media #{$tablet-query} {
+    background-image: none;
+  }
+
+  @media #{$phone-ls-query} {
+    margin-top: 75px;
+  }
+
+  @media #{$phone-ls-query} {
+    padding: 0 16px;
+  }
+
+  &__title {
+    .layer-icon__icon {
+      width: 29px;
+      height: 29px;
+      background-image: url("../../assets/img/team-icon.svg");
+    }
+  }
+
+  &__top-text {
+    max-width: 550px;
+    margin: 1em auto 2em;
+
+    font-family: $font-futura-book-c;
+    font-size: 20px;
+    line-height: 1.4;
+    text-align: center;
+    color: $color-text-on-dark;
+
+    @media #{$phone-ls-query} {
+      font-size: 15px;
+    }
+  }
+
+  &__line {
+    width: 55px;
+    margin: 50px auto 0;
+    border: 1px solid $color-stand-out-on-dark;
+
+    @media #{$tablet-query} {
+      display: none;
+    }
+  }
+
+  &__bottom-text {
+    max-width: 550px;
+    margin: 1em auto 0;
+
+    font-family: $font-futura-book-c;
+    font-size: 20px;
+    line-height: 1.7;
+    text-align: center;
+
+    color: $color-text-on-light;
+
+    @media #{$tablet-query} {
+      display: none;
+    }
+  }
+
+  &__cards {
+    max-width: 1064px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+
+    @media #{$tablet-ls-query} {
+      padding: 0 32px;
+    }
+
+    @media #{$tablet-query} {
+      flex-wrap: wrap;
+    }
+
+    @media #{$phone-ls-query} {
+      padding: 0 64px;
+    }
+
+    @media #{$phone-query} {
+      padding: 0 0;
+    }
+  }
+
+  .teamate {
+    $icon-width: 70px;
+    $description-shift: 55px;
+
+    flex-basis: 26%;
+
+    padding:
+      $icon-width / 2
+      0
+      $description-shift
+      $icon-width / 2;
+
+    @media #{$tablet-ls-query} {
+      flex-basis: 27%;
+    }
+
+    @media #{$tablet-query} {
+      flex-basis: 306px;
+      margin: 0 auto 32px;
+    }
+
+    &:nth-child(1) {
+      .teamate__foto {
+        background-image: url("../../assets/img/teamates/Dmitry-Tulyakov.png");
+      }
+    }
+
+    &:nth-child(2) {
+      .teamate__foto {
+        background-image: url("../../assets/img/teamates/Larisa-Kotlyarova.png");
+      }
+    }
+
+    &:nth-child(3) {
+      .teamate__foto {
+        background-image: url("../../assets/img/teamates/Alexey-Efimov.png");
+      }
+    }
+
+    &__icon {
+
+      position: absolute;
+
+      width: $icon-width;
+      height: $icon-width;
+
+      box-shadow: 0 5px 20px rgba(227, 184, 115, 0.5);
+      background-color: $color-stand-out-on-dark;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      transform: translate(-50%, -50%);
+
+      &.idea {
+        background-image: url("../../assets/img/idea-icon.svg");
+      }
+
+      &.pen {
+        background-image: url("../../assets/img/pen-icon.svg");
+      }
+
+      &.portfolio {
+        background-image: url("../../assets/img/portfolio-icon.svg");
+      }
+    }
+
+    &__foto {
+      width: 100%;
+      height: 360px;
+      display: flex;
+      background-size: cover;
+      background-position: center;
+    }
+
+    &__description {
+      width: 230px;
+      margin: auto auto 0;
+      background-color: $color-text-on-dark;
+      transform: translateY(40%);
+    }
+
+    &__name {
+      margin-top: 1.3em;
+
+      font-family: $font-yeseva-one;
+      font-size: 18px;
+      line-height: 1.4;
+      text-align: center;
+
+      color: $color-dark-text;
+    }
+
+    &__profession {
+      font-family: $font-futura-book-c;
+      font-size: 18px;
+      line-height: 1.4;
+      text-align: center;
+
+      color: $color-gray-text;
+    }
+
+    &__experience {
+      margin-top: 1.3em;
+
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      font-family: $font-yeseva-one;
+      font-size: 13px;
+      line-height: 1.4;
+      text-transform: uppercase;
+
+      color: #ffffff;
+
+      background-color: $color-stand-out-on-dark;
+    }
+  }
+}

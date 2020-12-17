@@ -1,0 +1,141 @@
+
+.measurement {
+  height: 968px;
+  background-color: white;
+
+  display: grid;
+  grid-template-columns: 1fr 38%;
+  grid-column-gap: 54px;
+  grid-template-rows: 612px max-content;
+  grid-row-gap: 38px;
+  grid-template-areas:
+    "flow form"
+    "flow ad";
+  padding-right: 99px;
+
+  @media #{$tablet-query} {
+    display: none;
+  }
+
+  &__flow {
+    grid-area: flow;
+    height: 692px;
+    background-image: url("../assets/img/measurement-bg.png");
+    background-position-x: right;
+  }
+
+  &__form {
+    grid-area: form;
+    align-self: flex-end;
+    background-color: #131313;
+  }
+
+  &__ad {
+    grid-area: ad;
+
+    width: 441px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+
+    .icon {
+      width: 72px;
+      height: 72px;
+
+      background-color: $color-stand-out-on-dark;
+      border-radius: 50%;
+
+      background-image: url("../assets/img/pig-icon.svg");
+      background: {
+        repeat: no-repeat;
+        position: center;
+      }
+    }
+
+    .text {
+      width: 240px;
+      margin-left: 25px;
+
+      font-family: $font-futura-demi-c;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 25px;
+
+      color: $color-stand-out-on-dark;
+
+      text-shadow: 0 3px 10px rgba(227, 184, 115, 0.15);
+    }
+  }
+
+  .form {
+
+    padding: 0 49px 27px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+
+    @media #{$tablet-ls-query} {
+      padding: 0 32px 27px;
+    }
+
+    .form__title {
+      align-self: center;
+
+      max-width: 250px;
+      margin-top: 30px;
+    }
+
+    .form__name {
+      margin-top: 40px;
+    }
+
+    .form__phone {
+      margin-top: 50px;
+    }
+
+    .form__email {
+      margin-top: 50px;
+    }
+
+    .form__agree {
+      margin-top: 16px;
+    }
+
+    .form__submit {
+
+      width: 213px;
+      height: 51px;
+
+      margin: 40px 0 0 auto;
+    }
+  }
+
+  .field {
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+
+    &__name {
+
+      font-family: $font-futura-book-c;
+      font-size: 15px;
+      line-height: 20px;
+
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    &__value {
+      margin: 3px 0 3px;
+      font-family: $font-futura-book-c;
+      font-size: 18px;
+      line-height: 25px;
+
+      color: white;
+
+      &::placeholder {
+        color: white;
+      }
+    }
+  }
+}

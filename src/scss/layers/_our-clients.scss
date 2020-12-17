@@ -1,0 +1,149 @@
+.our-clients {
+
+  padding: 90px 0 350px;
+  background-color: $color-light-bg;
+
+  @media #{$tablet-query} {
+    display: none;
+  }
+
+  &__title {
+    .layer-icon__icon {
+      width: 28px;
+      height: 28px;
+
+      background-image: url("../../assets/img/design-project-icon.svg");
+    }
+
+    .layer-icon__line.line {
+      width: 32px;
+    }
+  }
+
+  &__text {
+    max-width: 550px;
+    margin: 1em auto 2em;
+
+    font-family: $font-futura-book-c;
+    font-size: 20px;
+    line-height: 1.4;
+    text-align: center;
+    color: $color-light-dark-text;
+  }
+
+  &__cards {
+    max-width: 1240px;
+    margin: 48px auto 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .client {
+    $foto-height: 76px;
+    $foto-margin: 22px;
+
+    flex-basis: 30%;
+
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.04);
+
+    &:nth-child(1) {
+      .client__foto {
+        background-image: url("../../assets/img/clients/Fedosova-Maria-Konstantinovna.png");
+      }
+    }
+
+    &:nth-child(2) {
+      .client__foto {
+        background-image: url("../../assets/img/clients/Afanasyev-Sergey-Alexandrovich.png");
+      }
+    }
+
+    &:nth-child(3) {
+      .client__foto {
+        background-image: url("../../assets/img/clients/Kiriev-Egor-Leonidovich.png");
+      }
+    }
+
+    .client__foto {
+      width: $foto-height;
+      height: $foto-height;
+      margin: $foto-margin;
+      float: left;
+      border-radius: 50%;
+    }
+
+    .client__name {
+      height: $foto-height;
+      width: calc(100% - #{$foto-height + 3 * $foto-margin});
+      margin: $foto-margin 0;
+      margin-left: 0;
+      display: inline-flex;
+      align-items: center;
+
+      font-family: $font-yeseva-one;
+      font-size: 18px;
+      line-height: 1.4;
+
+      color: $color-dark-text;
+    }
+
+    .client__comment {
+
+      margin: 0 $foto-margin;
+
+      font-family: $font-futura-book-c;
+      font-size: 15px;
+      line-height: 1.8;
+
+      color: $color-gray-text;
+
+      p {
+        margin-bottom: 0.5em;
+      }
+    }
+
+    .client__features {
+      display: inline-block;
+      background-color: $color-stand-out-on-dark;
+      box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+      transform: translateY(50%);
+    }
+
+    &__area,
+    &__time {
+
+      padding: 11px 17px;
+      display: inline-flex;
+      align-items: center;
+
+      font-family: $font-yeseva-one;
+      font-size: 17px;
+      line-height: 1.4;
+      text-transform: uppercase;
+
+      color: $color-light-text;
+
+      &::before {
+        width: 34px;
+        height: 34px;
+        margin-right: 10px;
+        display: inline-block;
+        content: " ";
+        background-position: center;
+      }
+    }
+
+    &__area {
+      border-right: 1px solid $color-light-bg;
+    }
+
+    &__area::before {
+      background-image: url("../../assets/img/icons/area.svg");
+    }
+
+    &__time::before {
+      background-image: url("../../assets/img/icons/tablet.svg");
+    }
+  }
+}

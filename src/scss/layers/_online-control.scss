@@ -1,0 +1,271 @@
+.online-control-outer {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0.1px;
+
+  display: flex;
+  align-items: center;
+}
+
+.online-control {
+  position: relative;
+  top: 158px;
+  margin: 0 auto;
+
+  background-color: transparent;
+  max-width: 817px;
+
+  &__title {
+    margin: 0 auto 32px;
+
+    .layer-icon__icon {
+      width: 34px;
+      height: 29px;
+      background-image: url("../assets/img/online-control-icon.svg");
+    }
+  }
+
+  &__video {
+    margin: 0 auto 62px;
+
+    .proportional-box {
+      @include proportional-box__set-ratio(16, 9);
+
+      iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+    }
+  }
+
+  &__line {
+    margin-bottom: 34px;
+  }
+
+  &__text {
+    width: 681px;
+    margin: 0 auto 90px;
+
+    font-family: $font-futura-book-c;
+    font-size: 20px;
+    line-height: 34px;
+    text-align: center;
+
+    color: #363636;
+  }
+
+  .line {
+    width: 54px;
+    height: 0;
+    border: 1.5px solid $color-stand-out-on-dark;
+    margin: 0 auto;
+  }
+
+  .request-call {
+
+    display: grid;
+    grid-template-columns: 231px 231px 200px;
+    grid-template-rows: 75px auto;
+    grid-template-areas:
+      "name phone submit"
+      "agreement agreement agreement";
+    justify-content: space-between;
+
+    margin: 0 auto;
+
+    & > * {
+      display: inline-block;
+    }
+
+    &__name {
+      grid-area: name;
+    }
+
+    &__phone {
+      grid-area: phone;
+    }
+
+    &__submit {
+      grid-area: submit;
+
+      height: 51px;
+
+      font-family: $font-futura-book-c;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 26px;
+
+      text-align: center;
+      text-transform: uppercase;
+
+      background: #e3b873;
+      box-shadow: 0 15px 15px rgba(227, 184, 115, 0.15);
+      border-radius: 2px;
+
+      color: white;
+
+      cursor: pointer;
+
+      &:active {
+        opacity: 0.5;
+      }
+    }
+
+    &__agreement {
+      grid-area: agreement;
+
+      margin: 0 auto;
+
+
+      font-family: $font-futura-book-c;
+      font-size: 16px;
+      line-height: 22px;
+
+      color: #181818;
+
+      input[type="checkbox"] {
+        position: absolute;
+        z-index: -1;
+
+        &:checked + *::before {
+          background-position: 18px;
+        }
+      }
+
+      label {
+        display: flex;
+        align-items: center;
+
+        cursor: pointer;
+
+        &::before {
+          display: inline-block;
+          width: 18px;
+          height: 18px;
+          margin-right: 8px;
+
+          background-image: url("../../assets/img/checkbox-icon.svg");
+          content: " ";
+        }
+
+        &:hover {
+          text-shadow: 0 0 2px #e3b873;
+
+          &::before {
+            box-shadow: 0 0 5px #e3b873;
+          }
+        }
+      }
+    }
+  }
+
+  .field {
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+
+    &__name {
+
+      font-family: $font-futura-book-c;
+      font-size: 15px;
+      line-height: 20px;
+
+      color: rgba(54, 54, 54, 0.5);
+    }
+
+    &__value {
+      margin: 3px 0 3px;
+      font-family: $font-futura-book-c;
+      font-size: 18px;
+      line-height: 24px;
+
+      color: #363636;
+    }
+  }
+}
+
+@media #{$phone-ls-query} {
+  .online-control-outer {
+    position: initial;
+    width: initial;
+    height: initial;
+  }
+
+  .online-control {
+
+    position: static;
+    padding: 0 17px;
+
+    &__title {
+      margin: 36px auto 40px;
+    }
+
+    &__video {
+      margin-bottom: 28px;
+    }
+
+    &__line {
+      margin-bottom: 22px;
+    }
+
+    &__text {
+      width: auto;
+      margin-bottom: 36px;
+
+      font-size: 14px;
+      line-height: 24px;
+
+      color: #ffffff;
+    }
+
+    .request-call {
+
+      grid-template-columns: 1fr;
+      grid-template-rows: 108px 73px 55px 51px;
+      grid-template-areas:
+        "name"
+        "phone"
+        "agreement"
+        "submit";
+
+      &__phone {
+        width: 100%;
+      }
+
+      &__name {
+        width: 100%;
+      }
+
+      &__submit {
+        position: relative;
+        top: 21.5px;
+        width: 100%;
+      }
+
+      &__agreement {
+        width: 100%;
+
+        font-size: 16px;
+        line-height: 22px;
+
+        color: #ffffff;
+      }
+
+      .field {
+        &__name {
+          font-size: 15px;
+          line-height: 20px;
+
+          color: rgba(255, 255, 255, 0.5);
+        }
+
+        &__value {
+          font-size: 18px;
+          line-height: 25px;
+
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}

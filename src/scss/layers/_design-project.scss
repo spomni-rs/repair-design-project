@@ -1,0 +1,238 @@
+.design-project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 150px 0 85px;
+
+  background-image: linear-gradient(#ffffff 57%, #131313 43%);
+
+  &__title {
+    margin-bottom: 31px;
+
+    .layer-icon__icon {
+      width: 28px;
+      height: 28px;
+
+      background-image: url("../../assets/img/design-project-icon.svg");
+    }
+
+    .layer-icon__line.line {
+      width: 32px;
+    }
+  }
+
+  &__text {
+
+    max-width: 660px;
+    margin-bottom: 40px;
+
+    font-family: $font-futura-book-c;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+
+    color: #363636;
+  }
+
+  &__items-container {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    max-width: 1236px;
+    margin: 0 -15px 27px;
+  }
+
+  &__item {
+    width: 32%;
+    height: 420px;
+    margin-bottom: 187px;
+
+    background-position: center;
+    background-size: cover;
+
+    &:nth-child(1) {
+      background-image: url("../assets/img/repair-types-card-bg-1.png");
+    }
+
+    &:nth-child(2) {
+      background-image: url("../assets/img/repair-types-card-bg-3.png");
+    }
+
+    &:nth-child(3) {
+      background-image: url("../assets/img/repair-types-card-bg-2.png");
+    }
+
+    .card {
+      position: relative;
+      top: 233px;
+
+      padding: 25px 12% 59px;
+      margin: 65px 32px;
+      background-color: white;
+
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+
+      &__title {
+        margin-bottom: 13px;
+
+        font-family: $font-yeseva-one;
+        font-size: 18px;
+        line-height: 25px;
+
+        color: #363636;
+      }
+
+      &__features {
+        margin: 0 0 0 15px;
+
+        font-family: $font-futura-book-c;
+        font-size: 15px;
+        line-height: 25px;
+
+        color: #959595;
+      }
+
+      &__price {
+        position: absolute;
+        left: 0;
+        bottom: -26px;
+
+        width: 228px;
+        height: 54px;
+        max-width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-family: $font-yeseva-one;
+        font-size: 18px;
+        line-height: 25px;
+        text-transform: uppercase;
+
+        color: #ffffff;
+
+        background-color: #e3b873;
+        box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+      }
+    }
+  }
+
+  @media #{$tablet-query} {
+
+    margin-top: 0;
+    padding-top: 40%;
+
+    background-color: #131313;
+    background-image: none;
+
+    .layer-header__text {
+      font-size: 22px;
+      line-height: 30px;
+      color: white;
+    }
+
+    &__text {
+      font-size: 15px;
+      line-height: 20px;
+      font-style: normal;
+      font-weight: normal;
+
+      color: #ffffff;
+    }
+
+    .card {
+      padding:
+        25px
+        calc(0.498 * 100% - 107px)
+        59px;
+    }
+  }
+
+
+  @media #{$phone-ls-query} {
+
+    padding: 40% 17px 270px;
+
+    &__title {
+      margin-bottom: 40px;
+    }
+
+    &__items-container {
+      flex-direction: column;
+    }
+
+    &__item {
+      width: auto;
+      height: 352px;
+      padding: 0;
+
+      &:nth-child(1) {
+        margin-bottom: 264px;
+      }
+
+      &:nth-child(2) {
+        margin-bottom: 343px;
+      }
+
+      &:nth-child(3) {
+        margin-bottom: 100px;
+      }
+    }
+
+    .card {
+      padding: 25px 12% 59px;
+    }
+  }
+
+  @media #{$phone-query} {
+
+    padding-bottom: 240px;
+
+    &__item {
+      height: 352px;
+      padding-bottom: 0;
+
+      &:nth-child(1) {
+        margin-bottom: 164px;
+      }
+
+      &:nth-child(2) {
+        margin-bottom: 227px;
+      }
+
+      &:nth-child(3) {
+        margin-bottom: 0;
+      }
+    }
+
+    .card {
+      top: 173px;
+
+      padding: 25px 12% 37px;
+      margin-left: 0;
+
+      &__title {
+        font-size: 15px;
+        line-height: 21px;
+      }
+
+      &__features {
+        font-size: 13px;
+        line-height: 22px;
+      }
+
+      &__price {
+        bottom: -20px;
+
+        width: 190px;
+        height: 40px;
+
+        font-size: 15px;
+        line-height: 21px;
+      }
+    }
+  }
+}
