@@ -18,7 +18,7 @@
 }
 @font-face {
   font-family: "Proxima Nova";
-  src: url("../../assets/fonts/ProximaNova-Regular.ttf") format("truetype");
+  src: url("../assets/fonts/ProximaNova-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -973,7 +973,7 @@ select[multiple] {
   width: 18px;
   height: 18px;
   margin-right: 8px;
-  background-image: url("../../assets/img/checkbox-icon.svg");
+  background-image: url("../assets/img/checkbox-icon.svg");
   content: " ";
 }
 .online-control .request-call__agreement label:hover {
@@ -1072,7 +1072,7 @@ select[multiple] {
 .types-of-repair__title .layer-icon__icon {
   width: 28px;
   height: 28px;
-  background-image: url("../../assets/img/types-of-repair-icon.svg");
+  background-image: url("../assets/img/types-of-repair-icon.svg");
 }
 .types-of-repair__title .layer-icon__line.line {
   width: 32px;
@@ -1488,7 +1488,7 @@ select[multiple] {
 .design-project__title .layer-icon__icon {
   width: 28px;
   height: 28px;
-  background-image: url("../../assets/img/design-project-icon.svg");
+  background-image: url("../assets/img/design-project-icon.svg");
 }
 .design-project__title .layer-icon__line.line {
   width: 32px;
@@ -1775,7 +1775,7 @@ select[multiple] {
 }
 .workflow .slider {
   background-position: center;
-  background-image: url("../../assets/img/workflow.png");
+  background-image: url("../assets/img/workflow.png");
 }
 @media only screen and (max-width: 1200px) {
   .workflow {
@@ -1831,7 +1831,7 @@ select[multiple] {
 .team__title .layer-icon__icon {
   width: 29px;
   height: 29px;
-  background-image: url("../../assets/img/team-icon.svg");
+  background-image: url("../assets/img/team-icon.svg");
 }
 .team__top-text {
   max-width: 550px;
@@ -1914,13 +1914,13 @@ select[multiple] {
   }
 }
 .team .teamate:nth-child(1) .teamate__foto {
-  background-image: url("../../assets/img/teamates/Dmitry-Tulyakov.png");
+  background-image: url("../assets/img/teamates/Dmitry-Tulyakov.png");
 }
 .team .teamate:nth-child(2) .teamate__foto {
-  background-image: url("../../assets/img/teamates/Larisa-Kotlyarova.png");
+  background-image: url("../assets/img/teamates/Larisa-Kotlyarova.png");
 }
 .team .teamate:nth-child(3) .teamate__foto {
-  background-image: url("../../assets/img/teamates/Alexey-Efimov.png");
+  background-image: url("../assets/img/teamates/Alexey-Efimov.png");
 }
 .team .teamate__icon {
   position: absolute;
@@ -1933,13 +1933,13 @@ select[multiple] {
   transform: translate(-50%, -50%);
 }
 .team .teamate__icon.idea {
-  background-image: url("../../assets/img/idea-icon.svg");
+  background-image: url("../assets/img/idea-icon.svg");
 }
 .team .teamate__icon.pen {
-  background-image: url("../../assets/img/pen-icon.svg");
+  background-image: url("../assets/img/pen-icon.svg");
 }
 .team .teamate__icon.portfolio {
-  background-image: url("../../assets/img/portfolio-icon.svg");
+  background-image: url("../assets/img/portfolio-icon.svg");
 }
 .team .teamate__foto {
   width: 100%;
@@ -1995,7 +1995,7 @@ select[multiple] {
 .our-clients__title .layer-icon__icon {
   width: 28px;
   height: 28px;
-  background-image: url("../../assets/img/design-project-icon.svg");
+  background-image: url("../assets/img/design-project-icon.svg");
 }
 .our-clients__title .layer-icon__line.line {
   width: 32px;
@@ -2021,13 +2021,13 @@ select[multiple] {
   box-shadow: 0 10px 50px rgba(0, 0, 0, 0.04);
 }
 .our-clients .client:nth-child(1) .client__foto {
-  background-image: url("../../assets/img/clients/Fedosova-Maria-Konstantinovna.png");
+  background-image: url("../assets/img/clients/Fedosova-Maria-Konstantinovna.png");
 }
 .our-clients .client:nth-child(2) .client__foto {
-  background-image: url("../../assets/img/clients/Afanasyev-Sergey-Alexandrovich.png");
+  background-image: url("../assets/img/clients/Afanasyev-Sergey-Alexandrovich.png");
 }
 .our-clients .client:nth-child(3) .client__foto {
-  background-image: url("../../assets/img/clients/Kiriev-Egor-Leonidovich.png");
+  background-image: url("../assets/img/clients/Kiriev-Egor-Leonidovich.png");
 }
 .our-clients .client .client__foto {
   width: 76px;
@@ -2086,10 +2086,10 @@ select[multiple] {
   border-right: 1px solid #ffffff;
 }
 .our-clients .client__area::before {
-  background-image: url("../../assets/img/icons/area.svg");
+  background-image: url("../assets/img/icons/area.svg");
 }
 .our-clients .client__time::before {
-  background-image: url("../../assets/img/icons/tablet.svg");
+  background-image: url("../assets/img/icons/tablet.svg");
 }
 
 .question {
@@ -2176,7 +2176,7 @@ select[multiple] {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  background-image: url("../../assets/img/contacts-background.png");
+  background-image: url("../assets/img/contacts-background.png");
   background-size: cover;
 }
 .contacts__address-and-tel {
@@ -2215,10 +2215,10 @@ select[multiple] {
   opacity: 0.7;
 }
 .contacts__email {
-  background-image: url("../../assets/img/icons/email.svg");
+  background-image: url("../assets/img/icons/email.svg");
 }
 .contacts__instagram {
-  background-image: url("../../assets/img/icons/instagram.svg");
+  background-image: url("../assets/img/icons/instagram.svg");
 }
 .contacts__map {
   order: 1;
@@ -2236,7 +2236,7 @@ select[multiple] {
   top: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../../assets/img/map.png");
+  background-image: url("../assets/img/map.png");
   background-size: cover;
   background-position: center;
 }
